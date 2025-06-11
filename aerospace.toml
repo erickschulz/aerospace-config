@@ -241,3 +241,8 @@ alt-shift-h = ['join-with left', 'mode main']
 alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
+
+[[on-window-detected]]
+if.app-id = 'com.plexim.plecs'
+if.window-title-regex-substring = 'Library Browser'
+run = 'layout floating'
